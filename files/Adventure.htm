@@ -1,64 +1,43 @@
-<meta charset=utf-8 name="viewport" content="width=device-width,user-scalable=0"/>
+<meta charset=utf-8 name="viewport" content="width=device-width,user-scalable=no"/>
 <title>冒险模式命令指南 — horsegame.github.io</title>
 <style type="text/css">table {table-layout: fixed;}</style><div style="position:fixed;width:99%;width:-moz-calc(100% - 15px);width:-webkit-calc(100% - 15px);width: calc(100% - 15px);vertical-align:middle;background:#fff;top:0;">
 <table width="100%" class="table"><tr><td><a style="text-decoration:none;" href="javascript:history.go(-1);">◄返回</a></td><td align=center><a style="color:black;text-decoration:none;" href="http://horsegame.github.io">horsegame.github.io</a></td><td align=right><a style="color:black;text-decoration:none;" href="javascript:window.close();">╳</a></td></tr></table><hr /></div><div style="height:30px"></div>
 <p><h2>冒险模式命令指南</h2></p>
 <p><h3>更改游戏模式</h3></p>
-<p><big>基岩版/Java 1.12及以下</big><br />
-/gamemode 2
-<br />
-/gamemode a
-<br /></p>
-<p><big>所有版本</big><br />
-/gamemode adventure
-</p>
-<br />
+<p><big>基岩版/Java 1.12及以下</big></p>
+<p>/gamemode 2</p>
+<p>/gamemode a</p>
+<p><big>所有版本</big></p>
+<p>/gamemode adventure</p>
 <p><h3>生成可放置的方块</h3></p>
-<p><big>基岩版</big><br />
-/give <font color=gray>玩家名 方块名</font> 1 0 {"minecraft:can_place_on":{"blocks":["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}}
-<br /></p>
-<p><big>Java 1.12及以下</big><br />
-/give <font color=gray>玩家名 方块名</font> 1 0 {CanPlaceOn:["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}
-<br /></p>
-<p><big>Java 1.13及以上</big><br />
-/give <font color=gray>玩家名 方块名</font>{CanPlaceOn:["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}
-<br /></p>
+<p><big>基岩版</big></p>
+<p>/give <font color=gray>玩家名 方块名</font> 1 0 {"minecraft:can_place_on":{"blocks":["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}}</p>
+<p><big>Java 1.12及以下</big></p>
+<p>/give <font color=gray>玩家名 方块名</font> 1 0 {CanPlaceOn:["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}</p>
+<p><big>Java 1.13及以上</big></p>
+<p>/give <font color=gray>玩家名 方块名</font>{CanPlaceOn:["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}</p>
 <p>方括号内可以插入多个"<font color=gray>方块名</font>"(包括英文引号)，之间用英文逗号(,)隔开。</p>
-<br />
 <p><h3>生成方块破坏工具</h3></p>
-<p><big>基岩版</big><br />
-/give <font color=gray>玩家名 物品名</font> 1 0 {"minecraft:can_destroy":{"blocks":["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}}
-<br /></p>
-<p>J<big>ava 1.12及以下</big><br />
-/give <font color=gray>玩家名 物品名</font> 1 0 {CanDestroy:["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}
-<br /></p>
-<p><big>Java 1.13及以上</big><br />
-/give <font color=gray>玩家名 物品名</font>{CanDestroy:["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}
-<br /></p>
+<p><big>基岩版</big></p>
+<p>/give <font color=gray>玩家名 物品名</font> 1 0 {"minecraft:can_destroy":{"blocks":["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}}</p>
+<p><big>Java 1.12及以下</big></p>
+<p>/give <font color=gray>玩家名 物品名</font> 1 0 {CanDestroy:["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}</p>
+<p><big>Java 1.13及以上</big></p>
+<p>/give <font color=gray>玩家名 物品名</font>{CanDestroy:["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}</p>
 <p>方括号内可以插入多个"<font color=gray>方块名</font>"(包括英文引号)，之间用英文逗号(,)隔开。</p>
-<br />
 <p><h3>示例：获得可破坏草方块、泥土和沙子的钻石锹</h3></p>
-<p><big>基岩版</big><br />
-/give @s diamond_shovel 1 0 {"can_destroy":{"blocks":["grass","dirt","sand"]}}
-<br /></p>
-<p><big>Java 1.12及以下</big><br />
-/give @s diamond_shovel 1 0 {CanDestroy:[grass,dirt,sand]}
-<br /></p>
-<p><big>Java 1.13及以上</big><br />
-/give @s diamond_shovel{CanDestroy:[grass_block,dirt,sand]}
-<br /></p>
-<br />
+<p><big>基岩版</big></p>
+<p>/give @s diamond_shovel 1 0 {"can_destroy":{"blocks":["grass","dirt","sand"]}}</p>
+<p><big>Java 1.12及以下</big></p>
+<p>/give @s diamond_shovel 1 0 {CanDestroy:[grass,dirt,sand]}</p>
+<p><big>Java 1.13及以上</big></p>
+<p>/give @s diamond_shovel{CanDestroy:[grass_block,dirt,sand]}</p>
 <p><h3>示例：获得可放置在草方块和泥土上的石头</h3></p>
-<p><big>基岩版</big><br />
-/give @s stone 1 0 {"can_place_on":{"blocks":["grass","dirt"]}}
-<br /></p>
-<p><big>Java 1.12及以下</big><br />
-/give @s stone 1 0 {CanPlaceOn:[grass,dirt]}
-<br /></p>
-<p><big>Java 1.13及以上</big><br />
-/give @s stone{CanPlaceOn:[grass_block,dirt]}
-<br /></p>
+<p><big>基岩版</big></p>
+<p>/give @s stone 1 0 {"can_place_on":{"blocks":["grass","dirt"]}}</p>
+<p><big>Java 1.12及以下</big></p>
+<p>/give @s stone 1 0 {CanPlaceOn:[grass,dirt]}</p>
+<p><big>Java 1.13及以上</big></p>
+<p>/give @s stone{CanPlaceOn:[grass_block,dirt]}</p>
 <br />
-<p>
-Copyright &copy; 2019 <a href="http://horsegame.github.io">horsegame.github.io</a> 
-</p>
+<p>Copyright &copy; 2019 <a href="http://horsegame.github.io">horsegame.github.io</a></p>
