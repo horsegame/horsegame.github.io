@@ -1,54 +1,63 @@
 <meta charset=utf-8 name="viewport" content="width=device-width,user-scalable=0"/>
 <title>冒险模式命令指南 — horsegame.github.io</title>
 <style type="text/css">table {table-layout: fixed;}</style><div style="position:fixed;width:99%;width:-moz-calc(100% - 15px);width:-webkit-calc(100% - 15px);width: calc(100% - 15px);vertical-align:middle;background:#fff;top:0;">
-<table width="100%" class="table"><tr><td><a style="text-decoration:none;" href="javascript:history.go(-1);">◄ 返回</a></td><td align=center><a style="color:black;text-decoration:none;" href="http://horsegame.github.io">horsegame.github.io</a></td><td align=right><a style="color:black;text-decoration:none;" href="javascript:window.close();">╳</a></td></tr></table><hr /></div><div style="height:30px"></div>
+<table width="100%" class="table"><tr><td><a style="text-decoration:none;" href="javascript:history.go(-1);">◄返回</a></td><td align=center><a style="color:black;text-decoration:none;" href="http://horsegame.github.io">horsegame.github.io</a></td><td align=right><a style="color:black;text-decoration:none;" href="javascript:window.close();">╳</a></td></tr></table><hr /></div><div style="height:30px"></div>
 <p><h2>冒险模式命令指南</h2></p>
-<p>更改游戏模式</p>
-<p>基岩版/Java 1.12及以下<br />
-<textarea rows=1 style="width:100%" readonly="readonly">/gamemode 2</textarea>
-<textarea rows=1 style="width:100%" readonly="readonly">/gamemode a</textarea>
-<p>所有版本
-<textarea rows=1 style="width:100%" readonly="readonly">/gamemode adventure</textarea>
+<p><h3>更改游戏模式</h3></p>
+<p><big>基岩版/Java 1.12及以下</big><br />
+/gamemode 2
 <br />
-<p>生成可放置的方块</p>
-<p>基岩版
-<textarea rows=2 style="width:100%" readonly="readonly">
-/give 玩家名 方块名 1 0 {"minecraft:can_place_on":{"blocks":["方块名",…,"方块名"]}}</textarea></p>
-<p>Java 1.12及以下
-<textarea rows=2 style="width:100%" readonly="readonly">
-/give 玩家名 方块名 1 0 {CanPlaceOn:["方块名",…,"方块名"]}</textarea>
-<p>Java 1.13及以上
-<textarea rows=2 style="width:100%" readonly="readonly">
-/give 玩家名 方块名{CanPlaceOn:["方块名",…,"方块名"]}</textarea></p>
-<p>方括号内可以插入多个"方块名"(包括英文引号)，之间用英文逗号(,)隔开。</p>
+/gamemode a
+<br /></p>
+<p><big>所有版本</big><br />
+/gamemode adventure
+</p>
 <br />
-<p>生成方块破坏工具</p>
-<p>基岩版
-<textarea rows=2 style="width:100%" readonly="readonly">
-/give 玩家名 物品名 1 0 {"minecraft:can_destroy":{"blocks":["方块名",…,"方块名"]}}</textarea></p>
-<p>Java 1.12及以下
-<textarea rows=2 style="width:100%" readonly="readonly">
-/give 玩家名 物品名 1 0 {CanDestroy:["方块名",…,"方块名"]}</textarea></p>
-<p>Java 1.13及以上
-<textarea rows=2 style="width:100%" readonly="readonly">
-/give 玩家名 物品名{CanDestroy:["方块名",…,"方块名"]}</textarea></p>
-<p>方括号内可以插入多个"方块名"(包括英文引号)，之间用英文逗号(,)隔开。</p>
+<p><h3>生成可放置的方块</h3></p>
+<p><big>基岩版</big><br />
+/give <font color=gray>玩家名 方块名</font> 1 0 {"minecraft:can_place_on":{"blocks":["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}}
+<br /></p>
+<p><big>Java 1.12及以下</big><br />
+/give <font color=gray>玩家名 方块名</font> 1 0 {CanPlaceOn:["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}
+<br /></p>
+<p><big>Java 1.13及以上</big><br />
+/give <font color=gray>玩家名 方块名</font>{CanPlaceOn:["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}
+<br /></p>
+<p>方括号内可以插入多个"<font color=gray>方块名</font>"(包括英文引号)，之间用英文逗号(,)隔开。</p>
 <br />
-<p>示例：获得可破坏草方块、泥土和沙子的钻石锹。</p>
-<p>基岩版<textarea rows=2 style="width:100%" readonly="readonly">
-/give @s diamond_shovel 1 0 {"can_destroy":{"blocks":["grass","dirt","sand"]}}</textarea></p>
-<p>Java 1.12及以下<textarea rows=2 style="width:100%" readonly="readonly">
-/give @s diamond_shovel 1 0 {CanDestroy:[grass,dirt,sand]}</textarea></p>
-<p>Java 1.13及以上<textarea rows=2 style="width:100%" readonly="readonly">
-/give @s diamond_shovel{CanDestroy:[grass_block,dirt,sand]}</textarea></p>
+<p><h3>生成方块破坏工具</h3></p>
+<p><big>基岩版</big><br />
+/give <font color=gray>玩家名 物品名</font> 1 0 {"minecraft:can_destroy":{"blocks":["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}}
+<br /></p>
+<p>J<big>ava 1.12及以下</big><br />
+/give <font color=gray>玩家名 物品名</font> 1 0 {CanDestroy:["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}
+<br /></p>
+<p><big>Java 1.13及以上</big><br />
+/give <font color=gray>玩家名 物品名</font>{CanDestroy:["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}
+<br /></p>
+<p>方括号内可以插入多个"<font color=gray>方块名</font>"(包括英文引号)，之间用英文逗号(,)隔开。</p>
 <br />
-<p>示例：获得可放置在草方块和泥土上的石头</p>
-<p>基岩版<textarea rows=2 style="width:100%" readonly="readonly">
-/give @s stone 1 0 {"can_place_on":{"blocks":["grass","dirt"]}}</textarea></p>
-<p>Java 1.12及以下<textarea rows=1 style="width:100%" readonly="readonly">
-/give @s stone 1 0 {CanPlaceOn:[grass,dirt]}</textarea></p>
-<p>Java 1.13及以上<textarea rows=1 style="width:100%" readonly="readonly">
-/give @s stone{CanPlaceOn:[grass_block,dirt]}</textarea></p>
+<p><h3>示例：获得可破坏草方块、泥土和沙子的钻石锹</h3></p>
+<p><big>基岩版</big><br />
+/give @s diamond_shovel 1 0 {"can_destroy":{"blocks":["grass","dirt","sand"]}}
+<br /></p>
+<p><big>Java 1.12及以下</big><br />
+/give @s diamond_shovel 1 0 {CanDestroy:[grass,dirt,sand]}
+<br /></p>
+<p><big>Java 1.13及以上</big><br />
+/give @s diamond_shovel{CanDestroy:[grass_block,dirt,sand]}
+<br /></p>
+<br />
+<p><h3>示例：获得可放置在草方块和泥土上的石头</h3></p>
+<p><big>基岩版</big><br />
+/give @s stone 1 0 {"can_place_on":{"blocks":["grass","dirt"]}}
+<br /></p>
+<p><big>Java 1.12及以下</big><br />
+/give @s stone 1 0 {CanPlaceOn:[grass,dirt]}
+<br /></p>
+<p><big>Java 1.13及以上</big><br />
+/give @s stone{CanPlaceOn:[grass_block,dirt]}
+<br /></p>
 <br />
 <p>
 Copyright &copy; 2019 <a href="http://horsegame.github.io">horsegame.github.io</a> 
