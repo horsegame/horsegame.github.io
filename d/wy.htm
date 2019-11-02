@@ -1,6 +1,9 @@
-<meta charset=utf-8 name="viewport" content="width=device-width,user-scalable=0"/>
 <script type="text/javascript">
 var ua = navigator.userAgent.toLowerCase();	
-	if (/iphone|ipad|ipod|android/.test(ua)) {
-		    top.location.href='https://adl.netease.com/d/g/mc/c/pc';			
-	} else {top.location.href='http://mc.163.com'}</script>
+	if (/iphone|ipad|ipod/.test(ua)) {
+		top.location.href='https://adl.netease.com/d/g/mc/c/gwnew?type=ios'
+	} else {if (/android/.test(ua)) {
+		top.location.href='https://adl.netease.com/d/g/mc/c/pchttps://adl.netease.com/d/g/mc/c/gwnew?type=android'
+	} else {top.location.href='http://mc.163.com'}}
+	
+</script>
