@@ -11,20 +11,20 @@
 <p><code>/gamemode adventure</code></p>
 <p><h3>生成可放置的方块</h3></p>
 <p><big>基岩版</big></p>
-<p><code>/give <font color=gray>玩家名 方块名</font> 1 0 {"minecraft:can_place_on":{"blocks":["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}}</code></p>
+<p><code>/give <font color=gray><var>玩家名 方块名</var></font> 1 0 {"minecraft:can_place_on":{"blocks":["<font color=gray><var>方块名</var></font>",…,"<font color=gray><var>方块名</var></font>"]}}</code></p>
 <p><big>Java 1.12及以下</big></p>
-<p><code>/give <font color=gray>玩家名 方块名</font> 1 0 {CanPlaceOn:["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}</code></p>
+<p><code>/give <font color=gray><var>玩家名 方块名</var></font> 1 0 {CanPlaceOn:["<font color=gray><var>方块名</var></font>",…,"<font color=gray><var>方块名</var></font>"]}</code></p>
 <p><big>Java 1.13及以上</big></p>
-<p><code>/give <font color=gray>玩家名 方块名</font>{CanPlaceOn:["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}</code></p>
-<p>方括号内可以插入多个"<font color=gray>方块名</font>"(包括英文引号)，之间用英文逗号(,)隔开。</p>
+<p><code>/give <font color=gray><var>玩家名 方块名</var></font>{CanPlaceOn:["<font color=gray><var>方块名</var></font>",…,"<font color=gray><var>方块名</var></font>"]}</code></p>
+<p>方括号内可以插入多个"<font color=gray><var>方块名</var></font>"(包括英文引号)，之间用英文逗号(,)隔开。</p>
 <p><h3>生成方块破坏工具</h3></p>
 <p><big>基岩版</big></p>
-<p><code>/give <font color=gray>玩家名 物品名</font> 1 0 {"minecraft:can_destroy":{"blocks":["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}}</code></p>
+<p><code>/give <font color=gray><var>玩家名 物品名</var></font> 1 0 {"minecraft:can_destroy":{"blocks":["<font color=gray><var>方块名</var></font>",…,"<font color=gray><var>方块名</var></font>"]}}</code></p>
 <p><big>Java 1.12及以下</big></p>
-<p><code>/give <font color=gray>玩家名 物品名</font> 1 0 {CanDestroy:["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}</code></p>
+<p><code>/give <font color=gray><var>玩家名 物品名</var></font> 1 0 {CanDestroy:["<font color=gray><var>方块名</var></font>",…,"<font color=gray><var>方块名</var></font>"]}</code></p>
 <p><big>Java 1.13及以上</big></p>
-<p><code>/give <font color=gray>玩家名 物品名</font>{CanDestroy:["<font color=gray>方块名</font>",…,"<font color=gray>方块名</font>"]}</code></p>
-<p>方括号内可以插入多个"<font color=gray>方块名</font>"(包括英文引号)，之间用英文逗号(,)隔开。</p>
+<p><code>/give <font color=gray><var>玩家名 物品名</var></font>{CanDestroy:["<font color=gray><var>方块名</var></font>",…,"<font color=gray><var>方块名</var></font>"]}</code></p>
+<p>方括号内可以插入多个"<font color=gray><var>方块名</var></font>"(包括英文引号)，之间用英文逗号(,)隔开。</p>
 <p><h3>示例：获得可破坏草方块、泥土和沙子的钻石锹</h3></p>
 <p><big>基岩版</big></p>
 <p><code>/give @s diamond_shovel 1 0 {"can_destroy":{"blocks":["grass","dirt","sand"]}}</code></p>
